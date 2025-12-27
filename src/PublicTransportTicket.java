@@ -10,7 +10,6 @@ public class PublicTransportTicket {
 		dp[0]=0;
 		
 		for(int d=1;d<=30;d++) {
-			//nếu không đi thì chi phí vẫn giữ nguyên 
 			if(!travel[d])
 				dp[d]=dp[d-1]; 
 			else {
